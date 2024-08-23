@@ -1,0 +1,15 @@
+# Handle line endings automatically for text files
+* text=auto
+
+# Explicitly set text files to use LF line endings in the repository
+*.js   eol=lf
+*.json eol=lf
+*.css  eol=lf
+*.md   eol=lf
+*.html eol=lf
+
+# Specify binary files (Git should not change their line endings)
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.ico  binary

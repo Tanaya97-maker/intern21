@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden p-1 w-[1015px] overflow-y-auto custom-scrollbar  bg-stone-100 font-roboto ;
+  }
+}
+
+@layer components{
+  .notification{
+    @apply relative items-center justify-center  px-4 py-2 m-1 rounded-sm border-0 hover:bg-pink-600 hover:text-white  cursor-pointer hover:shadow-md hover:shadow-pink-300 hover:transition hover:ease-in;
+  }
+
+  .btn{
+    @apply mt-10 relative rounded-md border bg-white shadow-gray px-4 py-2 
+  }
+
+  .check-input {
+    @apply hidden; /* Hide the default checkbox */
+  }
+
+  .checkmark {
+    @apply h-5 w-6 border border-gray-500 rounded-sm flex items-center justify-center bg-white ;
+  }
+
+  .checkmark::after {
+    content: "";
+    @apply w-2 h-4 hidden border-b-2 border-r-2 border-fuchsia-700 transform rotate-45  m-1;
+  }
+
+  .check-input:checked + .checkmark::after {
+    @apply block; /* Show the checkmark when checked */
+  }
+
+  td{
+    @apply p-3.5
+  }
+}
+
+@layer utilities {
+  /* Custom Scrollbar Styles */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #b9b9b9; 
+    border-radius: 4px;
+    opacity: 80;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: none; 
+  }
+
+  /* Initially hide the scrollbar */
+  
+}
