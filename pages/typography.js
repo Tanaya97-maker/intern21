@@ -98,7 +98,8 @@ const typography = () => {
 
                       <tr>
                       <td className="text-gray-400 pr-36 text-[0.85rem] opacity-60 align-bottom font-medium text-nowrap">Small Tag</td>
-                      <td className="">Header with small subtitle Use "Small" tag for the headers</td>
+                      <td><p className="text-[2rem]">Header with small subtitle</p></br> 
+                          <p className="text-[1.6rem]">Use "Small" tag for the headers</p></td>
                       </tr>
 
                     </tbody>
