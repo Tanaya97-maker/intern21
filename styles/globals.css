@@ -14,7 +14,7 @@
   }
 
   .btn{
-    @apply mt-10 relative rounded-md border bg-white shadow-gray px-4 py-2 
+    @apply mt-10 relative rounded-md border bg-white !shadow-gray px-4 py-2 
   }
 
   .check-input {
