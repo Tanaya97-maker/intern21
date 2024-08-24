@@ -37,6 +37,10 @@
   td{
     @apply p-3.5
   }
+
+  .user:focus::placeholder {
+    color: transparent;
+  }
 }
 
 @layer utilities {

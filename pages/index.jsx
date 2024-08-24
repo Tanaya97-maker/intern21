@@ -1,4 +1,4 @@
-import Head from "next/head";
+
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
@@ -37,18 +37,12 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Material Dashboard React By Creative Tim</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/icon" href="favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"/>
-
-      </Head>
+      
 
       <div className="ml-64 w-full ">
         <div className="flex px-4 py-2">
           <Link
-            className="absolute text-gray-500 cursor-pointer px-6 py-3 rounded text-lg font-light active:bg-slate-300 active:"
+            className="absolute text-gray-500 cursor-pointer px-6 py-3 rounded text-lg font-light active:bg-slate-300 "
             href="/"
           >
             Dashboard

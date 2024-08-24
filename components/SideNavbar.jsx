@@ -19,29 +19,25 @@ const router=useRouter()
               
             <div className=" py-5 space-y-2">
 
-              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer bg-amber-500">
+              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer focus:bg-amber-500" onClick={() => router.push('/')}>
                 <Icons.dashboard className="text-2xl text-white opacity-70 hover:opacity-100" />
                 <h3 className="text-sm font-light text-white">Dashboard</h3>
-                
               </button>
 
-              <div className="flex items-center gap-4 p-3.5 rounded cursor-pointer ">
+              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer focus:bg-amber-500" onClick={() => router.push('./userProfile')}>
                 <Icons.user className="text-2xl text-white opacity-70 hover:opacity-100 " />
                 <h3 className="text-sm font-light text-white  ">User Profile</h3>
-                
-              </div>
+              </button>
 
-              <div className="flex items-center gap-4 p-3.5 rounded cursor-pointer ">
+              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer focus:bg-amber-500" onClick={() => router.push('./tableList')}>
                 <Icons.table className="text-2xl text-white opacity-70 focus:opacity-100" />
                 <h3 className="text-sm font-light text-white  ">Table List</h3>
-                
-              </div>
+              </button>
 
-              <div className="flex items-center gap-4 p-3.5 rounded cursor-pointer">
+              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer focus:bg-amber-500" onClick={() => router.push('./typography')}>
                 <Icons.topography className="text-2xl text-white opacity-70 focus:opacity-100 " />
-                <h3 className="text-sm font-light text-white  ">Topography</h3>
-                
-              </div>
+                <h3 className="text-sm font-light text-white  ">Typography</h3> 
+              </button>
 
               <div className="flex  items-center gap-4 p-3.5 rounded cursor-pointer">
                 <Icons.icon className="text-2xl text-white opacity-70 focus:opacity-100" />
@@ -54,17 +50,15 @@ const router=useRouter()
                 <h3 className="text-sm font-light text-white  ">Maps</h3>
                               </div>
 
-              <div className="flex items-center gap-4 p-3.5 rounded cursor-pointer ">
+              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer focus:bg-amber-500" onClick={() => router.push('./notifications')}>
                 <Icons.bell className="text-2xl text-white opacity-70 focus:opacity-100" />
                 <h3 className="text-sm font-light text-white  ">Notifications</h3>
-                
-              </div>
+              </button>
 
-              <div className="flex w-full mt-5 items-center gap-4 p-3.5 rounded cursor-pointer bg-amber-500">
+              <button type="button" className="w-full flex items-center gap-4 p-3.5 rounded cursor-pointer bg-amber-500" onClick={() => router.push('./upgrade')}>
                 <Icons.upgrade className="text-2xl text-white  " />
                 <h3 className="text-sm font-light text-white  ">Upgrade to PRO</h3>
-                
-            </div>
+              </button>
           </div>
         </div>
       </div>
