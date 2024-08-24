@@ -23,7 +23,7 @@ const notifications= () => {
                   Notifications<br/><sub class="text-slate-100 opacity-90 font-thin">Handcrafted by our friends from <span class="font-medium">Material UI</span> and styled by <span class="font-medium">Creative Tim</span>. Please checkout the <span class="font-medium">full documentation</span>.</sub>
                   </div>
 
-                  <div class="pt-10 grid grid-cols-2 gap-8 ">
+                  <div class="pt-10 grid lg:grid-cols-2 sm:grid-cols-1 gap-8 ">
                     <div class="space-y-6 font-light">
                       <p class="text-lg  ">Notifications Style</p>
                       <div class="p-4 !shadow-gray text-sm text-gray-500 rounded">

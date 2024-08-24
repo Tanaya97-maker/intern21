@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overflow-hidden p-1 w-[1015px] overflow-y-auto custom-scrollbar  bg-stone-100 font-roboto ;
+    @apply  p-1 w-full h-full overflow-y-auto custom-scrollbar  bg-stone-100 font-roboto ;
   }
 }
 

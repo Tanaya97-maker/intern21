@@ -3,10 +3,11 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-        <div className="w-full ml-64 mt-16" >
+        <div className=" ml-64 mt-16" >
         <hr/>
         <nav className="py-6 px-2 " >
-                <ul className="flex gap-6 justify-start md:justify-between ml-4 text-xs font-medium text-gray-600">
+                <ul className="flex gap-6 justify-between  pl-4 text-xs font-medium text-gray-600 ">
+                    <div className="flex gap-6 justify-between ">
                     <li >
                         <Link className="hover:text-fuchsia-700" href="/" >HOME</Link>
                     </li>
@@ -19,7 +20,8 @@ const Footer = () => {
                     <li>
                         <Link className="hover:text-fuchsia-700" href="/">BLOG</Link>
                     </li>
-                    <li className=" ml-auto font-light text-sm">© 2024
+                    </div>
+                    <li className=" font-light text-sm ">© 2024
                         <Link className="text-fuchsia-700" href="/" > Creative Tim</Link>, made with love for a better web
                     </li>
                 </ul>
